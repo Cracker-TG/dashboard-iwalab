@@ -1,0 +1,22 @@
+<script type='text/javascript'>
+$(function() {
+    Dashing.widget_base_dimensions = [630, 1050]
+    Dashing.numColumns = 3 
+    });
+</script>
+
+<% content_for :title do %>dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="clock" data-view="Clock" data-title="" data-height="200" data-width="200"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">                
+      <div data-id="verbinski" data-view="Verbinski"></div>                     
+    </li> 
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="google_calendar" data-view="GoogleCalendar"></div>
+    </li>
+  </ul>
+</div>

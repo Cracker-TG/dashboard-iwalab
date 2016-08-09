@@ -1,0 +1,21 @@
+<script type='text/javascript'>
+$(function() {
+    Dashing.widget_base_dimensions = [950, 1050]
+    Dashing.numColumns = 2
+    });
+
+</script>
+
+<% content_for :title do %>dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="google_docs1" data-view="GoogleDocs1"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id = 'doc2' data-id="google_docs2" data-view="GoogleDocs2"></div>
+    </li>
+  </ul>
+</div>

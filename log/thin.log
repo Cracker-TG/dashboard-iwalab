@@ -1,0 +1,8 @@
+Writing PID to tmp/pids/thin.pid
+Thin web server (v1.6.4 codename Gob Bluth)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3030, CTRL+C to stop
+127.0.0.1 - - [19/Jul/2016 16:55:55] "GET /events HTTP/1.1" 200 - 223.3904
+127.0.0.1 - - [19/Jul/2016 16:58:45] "GET /events HTTP/1.1" 200 - 393.7506
+127.0.0.1 - - [19/Jul/2016 16:58:45] "GET /events HTTP/1.1" 200 - 393.7574
+Exiting!

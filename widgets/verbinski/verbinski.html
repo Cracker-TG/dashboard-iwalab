@@ -1,0 +1,34 @@
+<div id="right-now" data-bind-class="right_now"> 
+  <div class="column-inner column-left">
+    <h1 class="title">Right now</h1>
+    <h2 class="temp" data-bind="current.temperature | append '&deg;' | raw"></h2>
+
+    <div class="summary-wrapper clearfix">
+      <img class="weather-icon-left" data-bind-src="current_icon" />
+      <p class="summary summary-right" data-bind="current.summary | raw"></p>
+    </div>
+
+    
+  </div>
+</div>
+
+<div id="this-week" data-bind-class="this_week_bg">
+  <div class="column-inner column-middle">
+    <h1 class="title">This week</h1>
+    <div class="upcoming-week">
+      <p data-foreach-day="this_week">
+        <span data-bind="day.time"></span>:
+        <span data-bind="day.min_temp | raw"></span> -
+        <span data-bind="day.max_temp | raw"></span>
+        <img class="weather-icon-inline" data-bind-src="day.icon" />
+      </p>
+    </div>
+  </div>
+
+  <div class="details-text-only">
+   <p class="last-updated">
+    <span>Last updated: </span>
+    <span data-bind="last_updated"></span>
+  </p>
+</div>
+</div>

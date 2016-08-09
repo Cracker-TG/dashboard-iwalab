@@ -1,0 +1,16 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+
+$background-color:  #222222;
+
+.widget-google-docs1 {
+  .widget-image-area {
+	  background-repeat: no-repeat;
+	  width: 100%;  
+	  height: 100%;  
+	  background-size: cover;
+  }
+
+  background-color: $background-color;
+}
