@@ -43,7 +43,7 @@ def google_calendar_event()
   service = Google::Apis::CalendarV3::CalendarService.new
   service.client_options.application_name = APPLICATION_NAME
   service.authorization = authorize
-  calendar_id = 'h12v2aqo5tdc4qac26b1j60b38@group.calendar.google.com'
+  calendar_id = 'ID'
 
   response = service.list_events(calendar_id,
      max_results: 10,
@@ -60,7 +60,7 @@ def google_docs1()
   service.client_options.application_name = APPLICATION_NAME
   service.authorization = authorize
 
-  doc1 = service.list_files(q: "name='Announcement 1'",
+  doc1 = service.list_files(q: "name='name document'",
     spaces: 'drive',
     fields: 'files/thumbnail_link')
 
@@ -72,7 +72,7 @@ def google_docs2()
   service.client_options.application_name = APPLICATION_NAME
   service.authorization = authorize
 
-  doc2 = service.list_files(q: "name='Announcement 2'",
+  doc2 = service.list_files(q: "name='name document'",
     spaces: 'drive',
     fields:'files/thumbnail_link')
   doc2.files[0].thumbnail_link + '0' 
@@ -83,7 +83,7 @@ def google_images()
   service = Google::Apis::DriveV3::DriveService.new
   service.client_options.application_name = APPLICATION_NAME
   service.authorization = authorize 
-  images = service.list_files(q: "'0B1MayvQ19RVcaWNmUjF5Sk1XaWc' in parents",
+  images = service.list_files(q: "'ID' in parents",
       fields: 'files/thumbnail_link')
 
   images.files.collect {|i| i.thumbnail_link +  '0'}
